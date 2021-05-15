@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+* ::before,
+* ::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #34302d;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  background-image: linear-gradient(111.1deg, #002846 -4.8%, #ff7373 82.7%, #ffaf7b 97.2%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+@media (max-width: 600px) {
+  body {
+    align-items: center;
+  }
+}
+
+.profile_container {
+  border-radius: 16px;
+  width: 780px;
+  height: 380px;
+  margin: 25px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.1), 0px 0px 10px rgba(255, 255, 255, 0.15);
+}
+@media (max-width: 600px) {
+  .profile_container {
+    height: 500px;
+  }
+}
+.profile_container::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(223, 228, 255, 0.3);
+  filter: blur(2px);
+}
+.profile_container .wraps {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.profile_container .wraps .profile_img {
+  width: 40%;
+  flex: 0 0 40%;
+  height: calc(100% + 1px);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  clip-path: ellipse(100% 85% at 0% 50%);
+  background: url("../image/photo.jpg") no-repeat top;
+  background-size: auto 114%;
+  background-position-x: center;
+  background-color: rgba(223, 228, 255, 0.25);
+}
+@media (max-width: 600px) {
+  .profile_container .wraps .profile_img {
+    width: 100%;
+    flex: 0 0 100%;
+    height: 60%;
+    position: static;
+    clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
+  }
+}
+.profile_container .wraps .profile_img span {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(111.1deg, #002846 -4.8%, #ff7373 82.7%, #ffaf7b 97.2%);
+  opacity: 0.16;
+}
+.profile_container .wraps .profile_details {
+  width: 60%;
+  flex: 0 0 60%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  padding: 25px;
+  height: fit-content;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .profile_container .wraps .profile_details {
+    width: 100%;
+    flex: 0 0 100%;
+    height: 40%;
+    position: static;
+    padding: 20px 15px;
+  }
+}
+.profile_container .wraps .profile_details .username {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0px;
+  margin-bottom: 0px;
+}
+.profile_container .wraps .profile_details .user_info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.profile_container .wraps .profile_details .user_info .info {
+  background-color: #333;
+  padding: 0px 10px;
+  height: 22px;
+  line-height: 22px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 3px;
+  margin: auto 5px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+.profile_container .wraps .profile_details .user_info .info:first-child {
+  background-image: linear-gradient(to right, #f857a6 0%, #ff5858 51%, #f857a6 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  display: block;
+}
+.profile_container .wraps .profile_details .user_info .info:first-child:hover {
+  background-position: right center;
+}
+.profile_container .wraps .profile_details .user_info .info:last-child {
+  background-image: linear-gradient(to right, #d53369 0%, #8e6dcb 51%, #d53369 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  display: block;
+}
+.profile_container .wraps .profile_details .user_info .info:last-child:hover {
+  background-position: right center;
+}
+.profile_container .wraps .profile_details .user_links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile_container .wraps .profile_details .user_links .link_btn {
+  transition: all 0.3s;
+  text-decoration: none;
+  background-color: #333;
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 10px;
+}
+.profile_container .wraps .profile_details .user_links .link_btn svg {
+  width: 25px;
+  height: 25px;
+}
+.profile_container .wraps .profile_details .user_links .link_btn svg:not(.fill) {
+  fill: none;
+  stroke: white;
+  stroke-width: 5px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
