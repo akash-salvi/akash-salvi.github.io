@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-{% load static %}
 <html lang="en">
 
 <head>
@@ -18,8 +17,7 @@
         crossorigin="anonymous"></script>
 
     <!-- CSS -->
-    
-    <link rel="stylesheet" href="{% static '/Profile/css/card.scss' %}">
+
     
     <style>
         * {
@@ -41,7 +39,7 @@
         <div>
             <nav class="navbar navbar-expand-lg navbar-light" style="">
                 <div class="container-fluid d-flex justify-content-between">
-                    <a class="navbar-brand" href="#"><img src="{% static '/Profile/image/loho.jpg' %}" alt="logo"
+                    <a class="navbar-brand" href="#"><img src="./image/loho.jpg" alt="logo"
                             width="35" height="34" class="d-inline-block align-text-top" style="margin-top: -7px;">
                         <span style="font-size:25px;color: #fff;padding-left: 10px;">Akash Salvi</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -74,18 +72,17 @@
         </div>
 
         <div>
-            <iframe id="about" src="{% static '/Profile/dist/index.html' %}" style="height: 500px;width: 100%;z-index: -1;"></iframe>
+            <iframe id="about" src="./card/index.html" style="height: 500px;width: 100%;z-index: -1;"></iframe>
         </div>
 
         <div>
-            <iframe id="skill" src="{% static '/Profile/skill/index.html' %}" style="height: 500px;width: 100%;margin-top: -7px;"></iframe>
+            <iframe id="skill" src="./skill/index.html" style="height: 500px;width: 100%;margin-top: -7px;"></iframe>
         </div>
     </div>
 </body>
 
 </html>
 
-{% block js %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.rings.min.js"></script>
 <script>
@@ -109,4 +106,3 @@
         "glare-prerender": false
     });
 </script>
-{% endblock %}

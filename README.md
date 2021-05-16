@@ -1,1 +1,0 @@
-# akash-salvi.github.io
