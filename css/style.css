@@ -17,17 +17,9 @@
   justify-content: center;
   height: 100vh;
 }
-
-@media only screen and (max-width: 800px) {
+@media (max-width: 600px) {
   .about {
-    display: block;
-    height: 50vh;
-  }
-  .head_name{
-    font-size: 50px !important;
-  }
-  .head_sub{
-    font-size: 20px !important;
+    align-items: center;
   }
 }
 
@@ -44,14 +36,9 @@
   z-index: 1;
   box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.1), 0px 0px 10px rgba(255, 255, 255, 0.15);
 }
-@media only screen and (max-width: 800px) {  
+@media (max-width: 600px) {
   .profile_container {
-    height: 280px;
-    width: 560px;
-  }
-  .about_col{
-    width: 700px;
-    padding-left: -10px;
+    height: 500px;
   }
 }
 .profile_container::after {
@@ -83,6 +70,15 @@
   background-position-x: center;
   background-color: rgba(223, 228, 255, 0.25);
 }
+@media (max-width: 600px) {
+  .profile_container .wraps .profile_img {
+    width: 100%;
+    flex: 0 0 100%;
+    height: 60%;
+    position: static;
+    clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
+  }
+}
 .profile_container .wraps .profile_img span {
   position: absolute;
   top: 0px;
@@ -106,15 +102,7 @@
   height: fit-content;
   text-align: center;
 }
-
-.about_title {
-  padding-right: 150px;
-  color: #fff;
-  font-size: 60px;
-  text-align: center;
-}
-
-@media only screen and (max-width : 600px){
+@media (max-width: 600px) {
   .profile_container .wraps .profile_details {
     width: 100%;
     flex: 0 0 100%;
@@ -123,17 +111,6 @@
     padding: 20px 15px;
   }
 }
-
-@media only screen and (max-width: 700px) {  
-  .about_title {
-    padding-top: 15px;
-    color: #fff;
-    font-size:40px;
-    text-align: center;
-  }
-}
-
-
 .profile_container .wraps .profile_details .username {
   font-size: 40px;
   font-weight: 500;
@@ -193,34 +170,6 @@
   stroke-linecap: round;
   stroke-linejoin: round;
 }
-@media only screen and (max-width: 600px) {
-  .profile_container .wraps .profile_img {
-    width: 100%;
-    flex: 0 0 100%;
-    height: 60%;
-    position: static;
-    clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
-  }
-  .profile_container {
-    height: 30vh;
-    width:80vw;
-  }
-  .profile_container .wraps .profile_details .username {
-    font-size:100%;
-    font-weight: 500;
-    margin-top: -20px;
-    margin-bottom: -10px;
-  }
-  .profile_container .wraps .profile_details .user_info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    font-size: 40%;
-    font-weight: 500;
-  }
-}
-
 
 .go-corner {
   display: flex;
@@ -260,7 +209,6 @@
   overflow: hidden;
   border: 1px solid #cccccc;
 }
-
 
 .project_card h3{
   color: #002846; 
@@ -335,34 +283,6 @@
   text-decoration: none;
   -webkit-transition: color 0.2s;
 }
-
-.text-secondary{
-  font-size: 17px;
-}
-
-@media only screen and (max-width :800px){
-  .project_card {
-    position: relative;
-    max-width: 600px;
-    height: 200px;
-    background-color: #f6ffff;
-    border-radius: 8px;
-    padding: 24px 24px;
-    margin: 12px;
-    text-decoration: none;
-    overflow: hidden;
-    border: 1px solid #cccccc;
-  }
-  .tag {    
-    height: 26px;
-    font-size: 14px;
-    font-weight: 400;
-  }
-  .pro_col{
-    height: 100px;
-  }
-}
-
 
 .tag1{
   background-color: #DC2A74;
