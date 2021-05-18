@@ -100,11 +100,13 @@
                     </button>
                     <div class="collapse navbar-collapse option" id="navbarNavAltMarkup" style="width: 100%;">
                         <div class="navbar-nav mb-2 mb-lg-2 nav_link">
-                            <a class="nav-link active px-5" aria-current="page" href="#">Home</a>
-                            <a class="nav-link px-5" href="#about">About</a>
-                            <a class="nav-link px-5" href="#skill">Skills</a>
-                            <a class="nav-link px-5" href="#project">Project</a>
-                            <a class="nav-link px-5" href="./Akash_Salvi_Resume.pdf" download target="_blank">Resume</a>
+                            <a class="nav-link active px-4" aria-current="page" href="#">Home</a>
+                            <a class="nav-link px-4" href="#about">About</a>
+                            <a class="nav-link px-4" href="#skill">Skills</a>
+                            <a class="nav-link px-4" href="#achivements">Achivements</a>                            
+                            <a class="nav-link px-4" href="#blogs">Blogs</a>
+                            <a class="nav-link px-4" href="#project">Project</a>
+                            <a class="nav-link px-4" href="./Akash_Salvi_Resume.pdf" download target="_blank">Resume</a>
                         </div>
                     </div>
                 </div>
@@ -119,7 +121,6 @@
                 FullStack Developer | Competative Coder
             </h4>
         </div>
-
         
         <div class="about" id="about">
             <h1 class="about_title"> About </h1>
@@ -161,8 +162,7 @@
             </main>
         </div>
 
-        <div class="skills" id="skills">
-            <!-- <iframe id="skill" src="./skill/index.html" style="height: 600px;width: 100%;"></iframe> -->
+        <div class="skills" id="skill">
             
             <section class="intro">
                 
@@ -335,6 +335,61 @@
             </section>
         </div>
 
+        <div class="achivements" id="achivements">
+            <h3 class="ach_title">Achivements</h3>
+
+            <div class="ach_body">         
+                <ul class="ach_item">
+                    <li class="ach_item1"> Participated in Ideathon 2020 organized by PICT IEEE chapter and  secured 2nd prize</li>
+                    <li class="ach_item2"> Won 3rd Prize in Code-Jango coding contest held at college level</li>
+                    <li class="ach_item3"> Secured 4915th Rank in Google Kickstart. in Round G.</li>
+                    <li class="ach_item4"> Secured 5627nd Rank in Google HashCode with my team.</li>
+                    <li class="ach_item5"> Achieved Advanced Learner status In College Workshop.</li>
+                    <li class="ach_item6"> Completed many online certifications.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="blog" id="blogs">
+            <h3 class="blog_title">Blogs</h3>
+            <div class="blog_body">
+                <div class="blog_items">
+                    <div class="card blog_item" >
+                        <img src="./image/gfg.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">std::less in C++ with Examples</h5>
+                            <p class="card-text">It explains how we use std::less inbuilt function.</p>                        
+                        </div>
+                        <div class="card_button">
+                            <a href="https://www.geeksforgeeks.org/stdless-in-c-with-examples/" class="btn btn-primary" target="_blank">Visit Blog</a>
+                        </div>
+                    </div>
+                    <div class="card blog_item">
+                        <img src="./image/medium.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Introduction to Data Structure And Algorithm in C++ for Beginners</h5>
+                            <p class="card-text">Explaining Data Structure And Algorithm in C++ from starting.</p>
+                            
+                        </div>
+                        <div class="card_button">
+                            <a href="https://medium.com/dsc-dypcoe/introduction-to-data-structure-and-algorithm-in-c-for-beginners-part-1-2378fdc57e83" class="btn btn-primary" target="_blank">Visit Blog</a>
+                        </div>
+                    </div>
+                    <div class="card blog_item">
+                        <img src="./image/gfg.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Convert string to integer without using any in-built functions</h5>
+                            <p class="card-text">It explains how we can convert the given string into the number without using any inbuilt function.</p>
+                        </div>
+                        <div class="card_button">
+                            <a href="https://www.geeksforgeeks.org/convert-string-to-integer-without-using-any-in-built-functions/" class="btn btn-primary" target="_blank">Visit Blog</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="project" id="project">
             <h1 class="project_title">My Projects </h1>
             <div class="cards_set">
@@ -447,6 +502,8 @@
                         <ul class="list-unstyled text-small">
                             <li><a class="text-muted" href="#about">About</a></li>
                             <li><a class="text-muted" href="#skill">Skills</a></li>
+                            <li><a class="text-muted" href="#achivements">Achivements</a></li>                            
+                            <li><a class="text-muted" href="#blogs">Blogs</a></li>
                             <li><a class="text-muted" href="#project">Project</a></li>
                             <li><a class="text-muted" href="./Akash_Salvi_Resume.pdf" download target="_blank">Resume</a></li>
                         </ul>
@@ -508,6 +565,7 @@
         scaleMobile: 1.00
     })
 </script>
+
 <script>
     const sr = ScrollReveal({
         origin: 'top',
@@ -529,6 +587,18 @@
     sr.reveal('.project_card', {});
     sr.reveal('.tags', {});
     sr.reveal('.project_head', {});
+
+    sr.reveal('.blog_title', {});
+    sr.reveal('.blog_body', { delay: 300 });
+
+    sr.reveal('.ach_title', {});
+    sr.reveal('.ach_item1', { delay: 400 });
+    sr.reveal('.ach_item2', { delay: 500 });
+    sr.reveal('.ach_item3', { delay: 600 });
+    sr.reveal('.ach_item4', { delay: 700 });
+    sr.reveal('.ach_item5', { delay: 800 });
+    sr.reveal('.ach_item6', { delay: 900 });
+
 
 </script>
 
