@@ -1029,7 +1029,7 @@ transform: rotate(60deg);
 
 .project_img{
   height:290px;
-  width:auto;
+  width:100%;
   border-radius: 15px;
   border:1px solid rgb(133, 133, 133)
 }
