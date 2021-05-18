@@ -716,9 +716,15 @@ transform: rotate(60deg);
       color: #333;
       }  
 
+
       .code-description > div {
-      padding: 0px 25px;
+      padding: 0px 20px;
       font-size: 20px;
+      }
+
+      .code-description p{
+        width: 320px;
+        overflow-wrap:inherit  !important;
       }
       
       
@@ -809,6 +815,8 @@ transform: rotate(60deg);
 
 
 /* -- Achievement section -- */
+
+
 .ach_title{
   font-size: 45px;
   text-align: center;
@@ -859,6 +867,7 @@ transform: rotate(60deg);
 
 
 /* -- blog section -- */
+
 .blog{
   padding: 30px;
   padding-bottom: 60px;
@@ -1142,7 +1151,17 @@ transform: rotate(60deg);
 }
 
 
+
+
+
+
+
+
+
+
 /*  -- Footer -- */
+
+
 .foot{
   padding-top: 20px;
 }
@@ -1167,20 +1186,46 @@ transform: rotate(60deg);
   text-align: end;
 }
 
+.foot_head{
+  font-weight: 800;
+}
+
 @media (max-width: 600px) {
+  .size_footer{
+    padding-top: 0px;
+    height: 100px !important;
+  }
+  .links ul{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+  }
+
+  .text-muted{
+    padding: 5px;
+  }
+
   .foot{
     padding-top: 20px;
   }
   .main_foot{
     margin: 0px;
     padding-left: 0px;
+    padding-bottom: 0px !important; 
     align-items: center;
   }
   .links{
     padding-left: 4%;
     padding-right: 10%;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important; 
     font-size: 15px;
     text-align: center;
+  }
+
+  .text-center{
+    padding: 0px !important;
+    padding-bottom: 5px !important;
   }
   
   .moral{
@@ -1191,5 +1236,6 @@ transform: rotate(60deg);
 
   .contact{  
     text-align: center;
+    font-size: 10px;
   }
 }
